@@ -8,13 +8,15 @@ Ejemplo
 #Inventario
 [VRP]
 myrouter.local
+```
 [VRP:vars]
 ansible_network_os=ce
 ansible_connection=ansible.netcommon.network_cli
-
+```
 # Task en el playbook
 
-```  - name: "show de HUAWEI"
+```  
+  - name: "show de HUAWEI"
     pelandrun.vrp.vrp_command:
       commands: display ip routing-table
     vars:
